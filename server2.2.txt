@@ -17,7 +17,6 @@ int create_socket(int tcp){
 }
 
 int bind_socket(int server_sock,int port){
-//	struct sockaddr_in     servaddr;
 	memset(&servaddr, 0, sizeof(servaddr));
     	servaddr.sin_family = AF_INET;
     	servaddr.sin_addr.s_addr = htonl(INADDR_ANY);
